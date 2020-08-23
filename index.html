@@ -512,23 +512,83 @@
           </ul>
         </div>
 
-        <div>
+
+/* sign-up */
+
+        <div class="sign-up">
           <b class="join"> Подпишитесь на рассылку</b>
+          <form class="join-us-form">
+          <label for="email" >Email</label>
+          <input type="email" name="email" id="email" placeholder="E-mail"/>
+
+                    <button class="btn" type="submit">Подписаться</button>
+          </form>
         </div>
       </div>
     </footer>
+
+
+    /* Modal btn-close*/
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
 <button class="btn-close" data-modal-close>
                 <svg class="icon-vector">
                   <use href="./images/ikonki svg/without color/sprite-nocolor.svg#icon-vector" </use>
                 </svg>
-  
+                  
   </button>   
-<p class="message">This is modal!</p>
+
+  <!-- Form -->
+
+  <form class="form" autocomplete="off">
+<div>
+<div class="name-form">  
+<b >Оставьте свои данные, мы вам перезвоним</b>
+</div>
+<div class="form-field">
+  <label for="name" class="form-label">Имя</label>
+<input type="text" class="form-input" name="name" id="name" placeholder=" ">
+                <!-- <svg class="icon-vektor">
+                  <use href="./images/ikonki svg/without color/sprite-nocolor.svg#icon-vector-1-1" width="12" height="12" </use>
+                </svg> -->
+
+</div>
+
+<div class="form-field">
+    <label for="tel">Телефон </label>
+
+    <input type="tel" name="tel" id="tel">
+</div>
+
+<div class="form-field">
+    <label for="email"> Почта </label>
+    <input type="email" name="email" id="email" autocomplete="on">
+</div>
+
+<div class="form-field">
+  <label for="comment"> Комментарий </label>
+<textarea class="comment" name="comment" id="comment" rows="8" placeholder="Введите текст"></textarea>
+</div>
+
+<div class="checkbox">
+  <input type="checkbox" name="checkbox" value="checkbox" id="checkbox">
+    <label for="checkbox"> Соглашаюсь с рассылкой и принимаю Условия договора </label>
+</div>
+
+<div>
+<button class="btn" type="submit">Отправить</button>
+</div>
+</div>
+
+</form>
 
 </div>
     </div>
       <script src="./js/modal.js"></script>
   </body>
 </html>
+
+<label>
+  
+</label>
