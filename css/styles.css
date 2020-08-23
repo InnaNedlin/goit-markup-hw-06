@@ -634,8 +634,36 @@ body {
 }
 
 /* sign-up */
+
 .sign-up {
-  width: 785px;
+  width: 570px;
+  height: 86px;
+}
+/* sign-up-form */
+
+.join-us-form {
+  display: flex;
+  align-items: flex-start;
+}
+
+.join-email {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: transparent;
+}
+.btn-sign-up {
+  display: inline-block;
+}
+
+.icon-send-form {
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+  color: #ffffff;
 }
 
 /* Modal .btn-close*/
@@ -775,9 +803,34 @@ textarea {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.checkbox {
-  width: 425px;
-  margin-bottom: 30px;
+.check {
+}
+
+.check-input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.option {
+  display: block;
+  width: 400px;
+  height: 24px;
+  margin-left: 8px;
+  margin-right: 51px;
+  font-size: 14px;
+  line-height: 1.71;
+  /* identical to box height, or 171% */
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.check-box {
+  position: absolute;
+  width: 16px;
+  height: 15px;
+  background-image: ;
 }
 
 .btn-submit {
