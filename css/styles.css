@@ -785,29 +785,9 @@ body {
   display: flex;
   flex-direction: column;
   width: 448px;
-  text-align: left;
+  /* text-align: left; */
   margin-bottom: 10px;
 }
-
-.form-icon {
-  position: absolute;
-  display: inline-block;
-  top: 50%;
-  left: 12px;
-  /* margin-right: 11px;
-  margin-left: 11px;
-  margin-top: 4px; */
-
-  transform: translateY(-50%);
-  fill: #212121;
-  transition: transform var(--transition);
-}
-
-.form-field:focus-within > .form-icon {
-  fill: var(--accent-color);
-}
-
-/* <!-- checkbox --> */
 
 .form-field .label-field {
   margin-bottom: 20px;
@@ -818,13 +798,41 @@ body {
 }
 
 .form-field input {
-  padding: 11px 0;
-  /* margin-bottom: 10px; */
-  width: 448px;
+  padding: 11px 42px 0;
+  width: 100%;
   /* height: 40px; */
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+}
+
+.check-input {
+  /* position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0000);
+  overflow: hidden;
+}
+
+.form-icon {
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  fill: #212121;
+  transition: transform var(--transition);
+}
+
+.form-field:focus-within > .form-icon {
+  fill: var(--accent-color);
 }
 
 .form-field textarea {
@@ -849,27 +857,14 @@ textarea {
   color: rgba(117, 117, 117, 0.5);
 }
 
+/* Checkbox */
+
 .label-field {
   display: flex;
   align-items: center;
 }
 
 /* visuality hidden */
-
-.check-input {
-  /* position: absolute;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none; */
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0000);
-  overflow: hidden;
-}
 
 /* .option {
   display: block;
@@ -907,11 +902,3 @@ textarea {
   margin-left: auto;
   margin-right: auto;
 }
-
-/* .icon-vektor {
-  /* position: absolute; */
-/* top: 50%;
-  padding: 15px;
-  transform: translateY(-50%);
-  transition: var(--transition);
-} */
