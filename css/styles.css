@@ -649,7 +649,7 @@ body {
 }
 
 .join-email {
-  width: 358px;
+  width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 12px;
@@ -673,10 +673,8 @@ body {
 .btn-footer {
   display: flex;
   align-items: center;
-
   width: 200px;
   height: 50px;
-
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -685,10 +683,8 @@ body {
   color: #ffffff;
   background-color: var(--accent-color);
   border: none;
-
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 29px;
@@ -789,15 +785,6 @@ body {
   margin-bottom: 10px;
 }
 
-.form-field .label-field {
-  margin-bottom: 20px;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #757575;
-}
-
-/* .form-field input { */
 .form-input {
   padding-left: 42px;
   padding-top: 11px;
@@ -846,47 +833,39 @@ textarea {
 
 .comment {
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.16;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
 /* Checkbox */
 
-.label-field {
+.form-field .label-field {
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
 
 /* visuality hidden */
 
 .check-input {
-  /* position: absolute;
+  position: absolute;
   -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none; */
-  position: absolute;
+  appearance: none;
+  /* position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
   clip: rect(0000);
-  overflow: hidden;
+  overflow: hidden; */
 }
-
-/* .option {
-  display: block;
-  width: 400px;
-  height: 24px;
-  margin-left: 8px;
-  margin-right: 51px;
-  font-size: 14px;
-  line-height: 1.71;
-  /* identical to box height, or 171% */
-/* letter-spacing: 0.03em;
-  color: #757575;
-} */
 
 .checkbox-icon {
   display: inline-block;
@@ -905,8 +884,6 @@ textarea {
 }
 
 .btn-submit {
-  /* margin-right: 164px;
-  margin-left: 164px; */
   align-items: center;
   margin-left: auto;
   margin-right: auto;
