@@ -640,6 +640,14 @@ body {
   width: 570px;
   height: 86px;
 }
+
+.form-field-footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 448px;
+}
+
 /* sign-up-form */
 
 .join-us-form {
